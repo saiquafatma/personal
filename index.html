@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Details Form</title>
+    
+    
+</head>
+<body>
+    <form>
+        <label>Personal details</label>
+        <div>
+            <label for="salutation">Salutation</label> <br>
+                <select name="salutation" id="salutation"> 
+                <option value="none"selected >--None--</option>
+                <option value="mr" >Mr.</option>
+                <option value="mrs">Mrs./Ms.</option>
+            </select>
+        </div><br>
+        <div>
+            <label for="fname">First Name:</label>
+            <input type="text" name="fname" id="fname" required placeholder="abcd">
+        </div><br>
+        <div>
+            <label for="lname">Last Name:</label>
+            <input type="text" name="lname" id="lname" required placeholder="abcd">
+        </div><br>
+        <div>
+            <label for="gender">Gender:</label>
+            <label>
+                <input type="radio"  name="gender" value="male" required> Male
+                <input type="radio"  name="gender" value="female" required> Female
+                
+
+            </label>
+        </div><br>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required placeholder="abc@gmail.com" value="abc@gmailcom">
+        </div><br>
+        <div>
+            <label for="dob">Date of Birth:</label>
+            <input type="date" name="dob" id="dob" required>
+        </div><br>
+        <div>
+            <label for="address">Address:</label><br>
+            <textarea name="address" id="address" rows="4" cols="20" required></textarea>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
